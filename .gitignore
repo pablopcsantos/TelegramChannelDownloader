@@ -1,0 +1,41 @@
+# ==============================================================================
+# ARQUIVOS E PASTAS A SEREM IGNORADOS / FILES AND FOLDERS TO BE IGNORED
+# ==============================================================================
+
+# 1. Arquivos de Sessão e Segurança do Telegram (CRÍTICO!)
+#    Telegram Session & Security Files (CRITICAL!)
+#    Impede o vazamento de tokens de acesso e credenciais pessoais.
+#    Prevents leaking access tokens and personal session credentials.
+*.session
+*.session-journal
+
+# 2. Arquivos de Configuração Local / Local Configuration Files
+#    Evita enviar dados de configuração local salvos pelo usuário.
+#    Avoids uploading local configuration data saved by the user.
+config.json
+settings.json
+
+# 3. Executáveis e Arquivos de Compilação (PyInstaller)
+#    Executables & Build Artifacts (PyInstaller)
+#    O arquivo .exe deve ser anexado às "Releases" do GitHub, não ao código-fonte.
+#    The .exe binary should be attached to GitHub Releases, not source code.
+dist/
+build/
+*.exe
+
+# 4. Cache do Python / Python Cache Files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 5. Ambientes Virtuais do Python / Python Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+
+# 6. Arquivos do Sistema Operacional e IDEs / OS & IDE Files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
