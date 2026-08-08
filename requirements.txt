@@ -1,0 +1,8 @@
+# Interface Gráfica (GUI)
+PySide6
+
+# Biblioteca para API do Telegram
+telethon
+
+# Empacotamento / Compilação para .exe
+pyinstaller
